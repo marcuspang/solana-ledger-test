@@ -34,11 +34,11 @@ function Home() {
             </button>
 
             <div>
-              <CreateAWallet />
-              <FundWallet />
+              {/* <CreateAWallet /> */}
+              {/* <FundWallet /> */}
               <LinkAccounts />
               <UnlinkAccounts />
-              <WalletActions />
+              {/* <WalletActions /> */}
               <SessionSigners />
               <WalletManagement />
               <MFA />
@@ -79,7 +79,7 @@ function Home() {
           </div>
         </section>
       )}
-  
+
       <ToastContainer
         position="top-center"
         autoClose={5000}
