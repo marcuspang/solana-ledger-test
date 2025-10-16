@@ -4,18 +4,15 @@ import { usePrivy } from "@privy-io/react-auth";
 import Image from "next/image";
 import { ToastContainer } from "react-toastify";
 
+import LinkAccounts from "@/components/sections/link-accounts";
+import MFA from "@/components/sections/mfa";
+import SessionSigners from "@/components/sections/session-signers";
+import UnlinkAccounts from "@/components/sections/unlink-accounts";
+import UserObject from "@/components/sections/user-object";
+import WalletManagement from "@/components/sections/wallet-management";
 import { FullScreenLoader } from "@/components/ui/fullscreen-loader";
 import { Header } from "@/components/ui/header";
-import CreateAWallet from "@/components/sections/create-a-wallet";
-import UserObject from "@/components/sections/user-object";
 import { ArrowLeftIcon } from "@heroicons/react/16/solid";
-import FundWallet from "@/components/sections/fund-wallet";
-import LinkAccounts from "@/components/sections/link-accounts";
-import UnlinkAccounts from "@/components/sections/unlink-accounts";
-import WalletActions from "@/components/sections/wallet-actions";
-import SessionSigners from "@/components/sections/session-signers";
-import WalletManagement from "@/components/sections/wallet-management";
-import MFA from "@/components/sections/mfa";
 
 function Home() {
   const { ready, authenticated, logout, login } = usePrivy();
