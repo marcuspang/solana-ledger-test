@@ -3,11 +3,9 @@
 import { PrivyProvider } from "@privy-io/react-auth";
 import {
 	toSolanaWalletConnectors,
-	useSolanaLedgerPlugin,
 } from "@privy-io/react-auth/solana";
 
 export default function Providers({ children }: { children: React.ReactNode }) {
-	useSolanaLedgerPlugin();
 	return (
 		<PrivyProvider
 			appId={process.env.NEXT_PUBLIC_PRIVY_APP_ID!}

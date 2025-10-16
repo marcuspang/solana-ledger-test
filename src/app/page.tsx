@@ -13,9 +13,12 @@ import WalletManagement from "@/components/sections/wallet-management";
 import { FullScreenLoader } from "@/components/ui/fullscreen-loader";
 import { Header } from "@/components/ui/header";
 import { ArrowLeftIcon } from "@heroicons/react/16/solid";
+import { useSolanaLedgerPlugin } from "@privy-io/react-auth/solana";
 
 function Home() {
   const { ready, authenticated, logout, login } = usePrivy();
+  useSolanaLedgerPlugin();
+
   if (!ready) {
     return <FullScreenLoader />;
   }
